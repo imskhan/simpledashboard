@@ -1,0 +1,153 @@
+body{
+    background: #CFECEC;
+    font-family: tahoma;
+    color: #989898;
+    border: 1px outset;
+}
+
+#todo-table{
+    position: relative;
+    width: 100%;
+    right: 0%;
+    background: #EBF4FA;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#todo-table form:after{
+    margin: 0;
+    content: '';
+    display: block;
+    clear: both;
+}
+
+input[name="item"]{
+    width: 10%;
+    padding: 0px;
+    background:#F0FFFF;
+    border: 1px groove black;
+    float: left;
+    font-size: 20px;
+    color: #000000;
+}
+
+button{
+    position: relative;
+    padding: 6px;
+    left: 3%;
+    background: #848482;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: 14px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+li:hover{
+    text-decoration: line-through;
+    background: rgba(0,0,0,0.2);
+}
+
+h1{
+    background: url(/logo.png) no-repeat center;
+    margin-bottom: 0;
+    text-indent: -10000px;
+}
+#time {
+    position: relative;
+    left: 8%;
+    
+}
+#status {
+    position: relative;
+    left: 11%;
+    
+}
+#inprogress {
+    position: relative;
+    left: 13%;
+    
+}
+#codereview {
+    position: relative;
+    left: 15%;
+}
+#fixed {
+    position: relative;
+    left: 22%;
+}
+#tested {
+    position: relative;
+    left: 35%;
+}
+#resolved {
+    position: relative;
+    left: 45%;
+}
+#reopen {
+    position: relative;
+    left: 55%;
+}
+#litem {
+    position: relative;
+    width: 130px;
+}
+#ttime{
+    position: relative;
+    left: 3%;
+    
+}
+
+#btninprogress {
+    position: relative;
+    left: 8%;
+    width: 70px;
+}
+#chkcodereview {
+    position: relative;
+    left: 15%;
+}
+#fixedtime {
+    position: relative;
+    left: 23%;
+}
+#btnfixed {
+    position: relative;
+    left: 27%;
+}
+#testedtime {
+    position: relative;
+    left: 33%;
+}
+#btntested {
+    position: relative;
+    left: 37%;
+}
+#btnresolved {
+    position: relative;
+    left: 45%;
+}
+#reopen{
+    position: relative;
+    left: 50%;
+}
+label {
+text-decoration:underline;
+}

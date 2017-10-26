@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title>Todo List</title>
+		<script
+  			src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  			crossorigin="anonymous">
+  		</script>
+		<link href="/assets/styles.css" rel="stylesheet" type="text/css"/>
+		<script src="/assets/todo-list.js"></script>
+  	</head>
+  	<body>
+  		<div id="todo-table">
+  			<form>
+  				<input type="text" name="item" palceholder="Add new ticket..." required>
+  				<button type="submit">Add ticket</button>
+  				</br>
+  				<label id="tid"> Ticket ID </label>
+  				<label id="time"> Time </label>
+  				<label id="inprogress"> In Progres </label>
+  				<label id="codereview"> Code Review </label>
+  				<label id="fixed"> Fixed </label>
+  				<label id="tested"> Tested </label>
+  				<label id="resolved"> Resolved </label>
+  				<label id="reopen"> Reopen </label>
+  				
+			</form>
+			<ul>
+				
+				<% for(var i=0; i<todos.length; i++){ %>
+					<table>
+						<tr>
+							<td id="litem">
+					<li><%= todos[i].item %></li>
+					</td>
+					<td id="ttime">
+					<input type="text"  name="time" maxlength="5" size="5">
+						</td>
+						<td id="btninprogress">
+							<button   type="button">InProgress!</button>
+						</td>
+						<td id="chkcodereview">
+							<input type="checkbox"  name="codereview" value="codereview">
+						</td>
+						<td id="fixedtime">
+					<input type="text"  name="time" maxlength="5" size="5">
+						</td>
+						<td id="btnfixed">
+							<button   type="button">Click Me!</button>
+						</td>
+						<td id="testedtime">
+					<input type="text"  name="time" maxlength="5" size="5">
+						</td>
+						<td id="btntested">
+							<button   type="button">Click Me!</button>
+						</td>
+						<td id="btnresolved">
+							<button   type="button">Resolved!</button>
+						</td>
+						<td id="reopen">
+					<input type="text"  name="time" maxlength="30" size="25">
+						</td>
+						</tr>
+					</table>	
+				<% } %>
+				
+			</ul>
+  		</div>	
+  	</body>
+</html>
